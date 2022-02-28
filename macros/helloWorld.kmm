@@ -1,0 +1,32 @@
+# This macro is part of a brief tutorial from K-Meleon's website. For comments, 
+# resources, and explanations go here:
+# http://kmeleonbrowser.org/wiki/macros
+
+
+
+# Build menus on browser initialization. 
+_HelloWorld_BuildMenu{
+
+# menu item:
+$_name="Menu Item";
+        setmenu("DocumentSave",macro,$_name,"HelloWorld",-1);
+        setmenu("ImageView",macro,$_name,"HelloWorld",-1);
+        setmenu("Link",macro,$_name,"HelloWorld",-1);
+
+# keyboard shortcut:
+setaccel("CTRL ALT SHIFT H","macros(HelloWorld)");
+
+}
+
+
+# Command triggered by interface above:
+HelloWorld{
+        alert("Hello world!", "Alert");
+}
+
+
+
+$OnInit=$OnInit."_HelloWorld_BuildMenu;";
+# The line below must be in your macro.
+# You can call macros from configs, XUL-based extensions, and other macros.
+$macroModules=$macroModules."HelloWorld;";
