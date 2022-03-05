@@ -1,6 +1,13 @@
 # This macro is part of a brief tutorial from K-Meleon's website. For comments, 
-# resources, and explanations go here:
-# http://kmeleonbrowser.org/wiki/macros
+# resources, and explanations:
+# Macros:		http://kmeleonbrowser.org/wiki/macros
+# Language:		http://kmeleonbrowser.org/wiki/MacroLanguage2
+# Questions:	http://kmeleonbrowser.org/forum/read.php?9,155938
+#
+# The HelloWorld macro and extension are both Copyright © 2022 R.J.J. III.
+#
+# Any code or explanation not already available under Fair Use may be used under
+# any OSI-approved license of your choice.
 
 
 
@@ -17,6 +24,7 @@ $_name="Menu Item";
 setaccel("CTRL ALT SHIFT H","macros(HelloWorld)");
 
 }
+
 
 
 # Command triggered by interface above:
